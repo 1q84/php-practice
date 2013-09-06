@@ -25,7 +25,31 @@
 			}
 			exit;
 		}
-	
+// 		if($_FILES['userfile']['type']!='text/plain')
+// 		{
+// 			echo 'Problem: file is not plain text';
+// 			exit;
+// 		}
+		$upfile = 'uploads/'.$_FILES['userfile']['name'];
+		if(is_uploaded_file($_FILES['userfile']['tmp_name']))
+		{
+			if(!move_uploaded_file($_FILES['userfile']['tmp_name'],$upfile))
+			{
+				echo 'Problem:Could not move file to destination directory';
+				exit;
+			}
+		}
+		else {
+			echo 'Problem:Possible file upload attack.Filename.';
+			echo $_FILES['userfile']['name'];
+			exit;
+		}
+		echo 'File uploaded successfully<br><br>';
+		$contents = strip_tags($contents);
+		file_put_contents($_FILES['userfile']['name'], $contents);
+		echo '<p>Preview of uploaded file contents:</p><br /><hr/>';
+		echo nl2br($contents);
+		echo '<br /><hr/>';
 	
 	?>
 </body>
