@@ -1,0 +1,33 @@
+2013-10-24 19:11:06 - INFO --> This is a demo.
+2013-10-24 19:11:14 - INFO --> Info Test
+2013-10-24 19:11:14 - NOTICE --> Notice Test
+2013-10-24 19:11:14 - WARN --> Warn Test
+2013-10-24 19:11:14 - ERROR --> Error Test
+2013-10-24 19:11:14 - CRIT --> Fatal Test
+2013-10-24 19:11:14 - ALERT --> Alert Test
+2013-10-24 19:11:14 - CRIT --> Crit test
+2013-10-24 19:11:14 - EMERG --> Emerg Test
+2013-10-24 19:11:14 - INFO --> Testing passing an array or object; array (
+  'a' => 
+  array (
+    'b' => 'c',
+  ),
+  0 => 'd',
+)
+2013-10-24 19:11:14 - WARN --> Testing passing a NULL value; NULL
+2013-10-24 19:11:37 - INFO --> Info Test
+2013-10-24 19:11:37 - NOTICE --> Notice Test
+2013-10-24 19:11:37 - WARN --> Warn Test
+2013-10-24 19:11:37 - ERROR --> Error Test
+2013-10-24 19:11:37 - CRIT --> Fatal Test
+2013-10-24 19:11:37 - ALERT --> Alert Test
+2013-10-24 19:11:37 - CRIT --> Crit test
+2013-10-24 19:11:37 - EMERG --> Emerg Test
+2013-10-24 19:11:37 - INFO --> Testing passing an array or object; array (
+  'a' => 
+  array (
+    'b' => 'c',
+  ),
+  0 => 'd',
+)
+2013-10-24 19:11:37 - WARN --> Testing passing a NULL value; NULL

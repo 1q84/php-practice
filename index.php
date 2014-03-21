@@ -5,7 +5,9 @@
 <body>
 
 <?php
-	echo 'Hello,world.';	
+require dirname(__FILE__) . '/KLogger.php';
+$log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
+$log->logInfo("This is a demo.");
 ?>
 
 </body>
